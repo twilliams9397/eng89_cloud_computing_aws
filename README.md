@@ -13,16 +13,16 @@
 ![instance details](images/instance_details.png)
 - leave storage as it is
 - name it in tags, note that the below image is the databse instance, the app would be the same but _app
-![db naming key](images/db_naming)
+![db naming key](images/db_naming.png)
 - security group - ips added to allow explicit access
-![app security group](images/app_sg)
+![app security group](images/app_sg.png)
 - scp command to copy app folder form vagrant setup
 - install dependencies (look at provision.sh)
 - db env variable
 
 ### db setup
 - same setup but different security group so only app can access by using app ip address
-![db security group](images/db_sg)
+![db security group](images/db_sg.png)
 - install mongo - look at db provision.sh
 - mongod.conf file
 
