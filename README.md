@@ -30,7 +30,7 @@ scp -i eng89_devops.pem -r /Users/Tom1/Documents/Sparta/Vagrant/Dev_Env/eng89_de
 ```
 - SSH into instance (see above)
 - install dependencies with the following commands:
-`
+```linux
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install nginx -y
@@ -54,7 +54,7 @@ sudo echo "server{
 # Restarts nginx
 sudo systemctl restart nginx
 sudo systemctl enable nginx
-`
+```
 - db env variable once db instance is setup, using private db ip here
 add `DB_HOST=mongodb://172.31.23.128:27017/posts` to `~/.bashrc` file using `sudo nano` command
 
@@ -62,7 +62,7 @@ add `DB_HOST=mongodb://172.31.23.128:27017/posts` to `~/.bashrc` file using `sud
 - same setup but different security group so only app can access by using app ip address
 ![db security group](images/db_sg.png)
 - install mongo in the db instance with followng commands: - look at db provision.sh
-`
+```linux
 sudo apt-get install gnupg
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D68FA50FEA312927
 echo "deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
@@ -73,7 +73,7 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 npm install pm2 -g 
 sudo apt-get install python-software-properties -y
-`
+```
 - navigate to `/etc` and `sudo nano mongod.conf` and change the bindIp to 0.0.0.0
 
 ### Updating Security Rules
