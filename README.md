@@ -7,7 +7,7 @@
 ### before running
 - .pem key must be downloaded into .ssh folder
 - in this folder run the following command the first time `chmod 400 eng89_devops.pem`
-- to SSH into either instance, Paste SSH client command from AWS - `ssh -i "eng89_devops.pem" ubuntu@ec2-34-245-102-20.eu-west-1.compute.amazonaws.com` - this is for app instance
+- to SSH into either instance, Paste SSH client command from AWS - `ssh -i "eng89_devops.pem" ubuntu@ec2-34-245-102-20.eu-west-1.compute.amazonaws.com` - this is for app instance. Must be done in .ssh folder (or wherever .pem key is stored)
 - NOTE: the securoty groups can only be finished when both instances are setup, see Updating Security Rules below
 - once all the below installation is done, SSH into the app instance, `cd app` and `npm start`
 
