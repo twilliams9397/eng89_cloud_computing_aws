@@ -61,7 +61,7 @@ add `DB_HOST=mongodb://172.31.23.128:27017/posts` to `~/.bashrc` file using `sud
 ### db setup
 - same setup but different security group so only app can access by using app ip address
 ![db security group](images/db_sg.png)
-- install mongo in the db instance with followng commands: - look at db provision.sh
+- install mongo in the db instance with followng commands:
 ```linux
 sudo apt-get install gnupg
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv D68FA50FEA312927
