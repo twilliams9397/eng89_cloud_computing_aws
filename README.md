@@ -25,9 +25,9 @@
 - security group - ips added to allow explicit access
 ![app security group](images/app_sg.png)
 - scp command to copy app folder form vagrant setup - done from .ssh folder once instance is setup
-`
+```linux
 scp -i eng89_devops.pem -r /Users/Tom1/Documents/Sparta/Vagrant/Dev_Env/eng89_dev_env/app ubuntu@34.245.102.20:~/app/
-`
+```
 - SSH into instance (see above)
 - install dependencies with the following commands:
 `
