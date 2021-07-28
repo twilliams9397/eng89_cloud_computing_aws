@@ -18,4 +18,5 @@ python3.9 get-pip.py
 sudo python3.9 -m pip install awscli (use which ever python version you have installed here, must be 3.6 or above)
 aws configure (this step is where AWS access keys are entered and the region is chosen - use same region as instance, eu-west-1 in this case)
 ```
-- to install the boto3 package run `pip install boto3`
+- to install the boto3 package run ` sudo pip install boto3` or `pip3` in the python terminal
+- also install the awscli in the python terminal (may need `sudo` and user password) and go through the configuration steps
