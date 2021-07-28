@@ -23,7 +23,7 @@
 - name it in tags, note that the below image is the databse instance, the app would be the same but app
 ![db naming key](images/db_naming.png)
 - security group - ips added to allow explicit access
-![app security group](images/app_sg.png)
+![app security group](images/app_sg_info.png)
 - scp command to copy app folder form vagrant setup - done from .ssh folder once instance is setup
 ```linux
 scp -i eng89_devops.pem -r /Users/Tom1/Documents/Sparta/Vagrant/Dev_Env/eng89_dev_env/app ubuntu@34.245.102.20:~/app/
@@ -60,7 +60,7 @@ add `DB_HOST=mongodb://172.31.23.128:27017/posts` to `~/.bashrc` file using `sud
 
 ### db setup
 - same setup but different security group so only app can access by using app ip address
-![db security group](images/db_sg.png)
+![db security group](images/db_sg_info.png)
 - install mongo in the db instance with followng commands:
 ```linux
 sudo apt-get install gnupg
