@@ -20,7 +20,7 @@
 - configure instance details - any not shown below are left as default
 ![instance details](images/instance_details.png)
 - leave storage as it is
-- name it in tags, note that the below image is the databse instance, the app would be the same but _app
+- name it in tags, note that the below image is the databse instance, the app would be the same but app
 ![db naming key](images/db_naming.png)
 - security group - ips added to allow explicit access
 ![app security group](images/app_sg.png)
