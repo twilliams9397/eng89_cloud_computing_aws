@@ -80,6 +80,12 @@ sudo apt-get install python-software-properties -y
 - when viewing an ec2 instance, navigate to the security tab and select the security group
 - in the onbound rules section there is an edit button which is used to add/change/delete rules
 
+## AMI
+- an AMI saves an instance so it can be terminated and restarted
+- select an instance, and select the actions tab 
+- navigate to image and templates and select create image
+- give the image the same name as the instance and add a description to describe what the instance does
+- AMIs can be relaunched and will go back through the ec2 instance configuration setup steps
 
 
 
