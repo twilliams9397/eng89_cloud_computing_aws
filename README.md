@@ -55,7 +55,7 @@ sudo echo "server{
 sudo systemctl restart nginx
 sudo systemctl enable nginx
 ```
-- db env variable once db instance is setup, using private db ip here
+- app env variable once db instance is setup, using private db ip here
 add `DB_HOST=mongodb://172.31.23.128:27017/posts` to `~/.bashrc` file using `sudo nano` command
 
 ### db setup
